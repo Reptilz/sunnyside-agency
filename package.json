@@ -1,0 +1,19 @@
+{
+  "name": "sunnyside-agency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reptilz/sunnyside-agency.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reptilz/sunnyside-agency/issues"
+  },
+  "homepage": "https://github.com/Reptilz/sunnyside-agency#readme"
+}
