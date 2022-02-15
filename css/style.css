@@ -1,12 +1,20 @@
+/***** COLORS *****/
+/***** FONTS *****/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/***** COLORS *****/
-/***** FONTS *****/
-/*** Forward of components ***/
-/*** Forward of abstracts ***/
+/***** MOBILE DESIGN (375px) *****/
+@media screen and (max-width: 375px) {
+  header {
+    background-image: url("/assets/medias/mobile/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

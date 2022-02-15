@@ -1,0 +1,13 @@
+// ./scss/layout/header
+
+/***** MOBILE DESIGN (375px) *****/
+@media screen and (max-width: 375px) {
+    header {
+        background-image: url('/assets/medias/mobile/image-header.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 550px;
+        
+    }
+}
