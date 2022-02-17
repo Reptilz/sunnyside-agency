@@ -2,7 +2,7 @@
 @use '../abstracts/' as *;
 
     header {
-        background-image: url('/assets/medias/mobile/image-header.jpg');
+        background-image: url('../medias/mobile/image-header.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -39,7 +39,7 @@
 // MEDIA RESPONSIVE
     @media screen and (min-width: 375px) {
         header{
-            background-image: url('../assets/medias/desktop/image-header.jpg');
+            background-image: url('../medias/desktop/image-header.jpg');
         }
         .icon-menu {
             display: none;
