@@ -1,0 +1,52 @@
+// .scss/layout/footer 
+
+@use '../abstracts/' as *;
+
+.footer {
+    background-color: #90D4C5;
+    text-align: center;
+    color: $primaryColor3;
+    h3 {
+        font-size: 2.5rem;
+        padding: 50px 0;
+    }
+
+    &__links {
+        .links-footer{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: stretch
+            
+        }
+        li a {
+            text-decoration: none;
+            margin: 0 30px;
+            color: $primaryColor3;
+            font-size: 1.1em;
+            font-weight: bold;
+            opacity: 0.7;
+        }
+    }
+
+    &__icons {
+        .links-logo{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: stretch;   
+        }
+        li i {
+            margin: 50px 15px;
+            font-size: 1.5rem;
+            opacity: 0.8;
+            
+        }
+    }
+}

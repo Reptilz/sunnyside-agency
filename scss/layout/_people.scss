@@ -1,0 +1,57 @@
+// ./scss/layout/people 
+
+@use '../abstracts/' as *;
+
+.people {
+    text-align: center;
+    padding: 50px 20px;
+    
+    &__title {
+        font-size: 1.5em;
+        color: $neutralColor3;
+        padding-bottom: 50px;
+    }
+    .card-people {
+        &__img img {
+            width: 100px;
+            border-radius: 50%;
+        }
+        &__text {
+            color: $neutralColor2;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin: 30px 0;
+        }
+        &__who {
+            margin: 30px 0 80px 0;
+            color: $neutralColor1;
+            font-size: 1.3em;
+            .name {
+                padding: 10px 0;
+            }
+            .role {
+                font-size: .7em;
+                color: $neutralColor3;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+
+//MEDIA RESPONSIVE
+@media screen and (min-width: 375px) {
+    .people {
+        .card-people {
+            padding: 0 20px;
+        }
+        .grid-container{
+            display: grid;
+            padding: 20px 100px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+    }
+
+}

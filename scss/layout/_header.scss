@@ -1,13 +1,77 @@
 // ./scss/layout/header
+@use '../abstracts/' as *;
 
-/***** MOBILE DESIGN (375px) *****/
-@media screen and (max-width: 375px) {
     header {
         background-image: url('/assets/medias/mobile/image-header.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         height: 550px;
-        
+        color: $neutralColor5;
+        position: relative;
+                
+        .logo-sunnyside {
+            padding: 25px;
+            font-size: $fontSizeHeader;
+        }
+        .icon-menu {
+            width: 30px;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+        }
+        .nav {
+            visibility: hidden;
+        }
+        .header {
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            top: 50px;
+            &__title {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 50px;
+                margin: 100px 0 30px 0;
+            }
+
+        }
     }
-}
+
+// MEDIA RESPONSIVE
+    @media screen and (min-width: 375px) {
+        header{
+            background-image: url('/assets/medias/desktop/image-header.jpg');
+        }
+        .icon-menu {
+            display: none;
+        }
+
+        .nav__responsive {
+            position: absolute;
+            right: 25px;
+            top: 25px;
+            visibility: visible;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: stretch;
+            list-style-type: none;
+
+            li a{
+                text-decoration: none;
+                color: $neutralColor5;
+                font-weight: bold;
+                padding: 20px;
+                &:hover{
+                    color: $neutralColor1;
+                    background-color: $neutralColor5;
+                    border: 1px solid $neutralColor5;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
