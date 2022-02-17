@@ -8,13 +8,13 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     .card-img1 {
-        background-image: url('/assets/medias/mobile/image-transform.jpg');
+        background-image: url('../medias/mobile/image-transform.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     .card-img2 {
-        background-image: url('/assets/medias/mobile/image-stand-out.jpg');
+        background-image: url('../medias/mobile/image-stand-out.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -60,7 +60,7 @@
     }
 
     .card-img-text1 {
-        background-image: url('/assets/medias/mobile/image-graphic-design.jpg');
+        background-image: url('../medias/mobile/image-graphic-design.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -88,7 +88,7 @@
 
     .card-img-text2{
         @extend .card-img-text1;
-        background-image: url('/assets/medias/mobile/image-photography.jpg');
+        background-image: url('../medias/mobile/image-photography.jpg');
         h3 {
             color: $primaryPhotoColor;
         }
