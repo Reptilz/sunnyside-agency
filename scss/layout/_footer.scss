@@ -30,6 +30,9 @@
             font-weight: bold;
             opacity: 0.7;
         }
+        li a:hover{
+            opacity: 1;
+        }
     }
 
     &__icons {
@@ -40,13 +43,17 @@
             flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
-            align-content: stretch;   
+            align-content: stretch;  
         }
         li i {
+            cursor: pointer; 
             margin: 50px 15px;
             font-size: 1.5rem;
             opacity: 0.8;
             
+        }
+        li i:hover{
+            opacity:1;
         }
     }
 }

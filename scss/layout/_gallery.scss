@@ -35,3 +35,16 @@
     span {opacity: 0;}
 }
 
+
+//MEDIA RESPONSIVE
+@media screen and (min-width: 375px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .grids {
+            height: 400px;
+        }
+        
+    }
+
+}
