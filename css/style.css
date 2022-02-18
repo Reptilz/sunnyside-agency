@@ -11,7 +11,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 550px;
+  height: 600px;
   color: white;
   position: relative;
 }
@@ -37,6 +37,44 @@ header .header__title {
 }
 header #scroll-icon {
   cursor: pointer;
+}
+header #scroll-icon .header-arrow {
+  animation: myAnim 2s ease-in 0s infinite normal both;
+}
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+  25%, 55%, 75%, 87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 @media screen and (min-width: 375px) {
@@ -434,6 +472,7 @@ body {
     display: none;
   }
 }
+/*** SCROLL WITH APPEAR ELEMENT ***/
 .reveal {
   position: relative;
   transform: translateY(150px);
@@ -444,6 +483,26 @@ body {
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+/*** SCROLL WITH ARROW DOWN HEADER ***/
+@keyframes smoothscroll1 {
+  from, to {
+    scroll-behavior: smooth;
+  }
+}
+@keyframes smoothscroll2 {
+  from, to {
+    scroll-behavior: smooth;
+  }
+}
+html {
+  animation: smoothscroll1 3s;
+}
+
+html:focus-within {
+  animation-name: smoothscroll2;
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */

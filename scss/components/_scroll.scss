@@ -1,5 +1,6 @@
 // ./scss/components/scroll 
 
+/*** SCROLL WITH APPEAR ELEMENT ***/
 .reveal{
     position: relative;
     transform: translateY(150px);
@@ -10,4 +11,28 @@
   .reveal.active{
     transform: translateY(0);
     opacity: 1;
+  }
+
+
+/*** SCROLL WITH ARROW DOWN HEADER ***/
+  @keyframes smoothscroll1 {
+    from, to {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  @keyframes smoothscroll2 {
+    from, to {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  
+  html {
+    animation: smoothscroll1 3s;
+  }
+  
+  html:focus-within {
+    animation-name: smoothscroll2;
+    scroll-behavior: smooth;
   }
