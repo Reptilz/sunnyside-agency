@@ -467,7 +467,7 @@ body {
   transform: none;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 390px) {
   #menuToggle {
     display: none;
   }
