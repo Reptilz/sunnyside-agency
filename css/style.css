@@ -85,6 +85,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  font-family: "Fraunces", serif;
 }
 .cards .card-img1 {
   background-image: url("../medias/desktop/image-transform.jpg");
@@ -156,6 +157,7 @@ body {
 .cards .card-img-text1 .card-img-text__description p, .cards .card-img-text2 .card-img-text__description p {
   padding: 0 20px;
   font-weight: bold;
+  opacity: 0.8;
 }
 .cards .card-img-text2 {
   background-image: url("../medias/desktop/image-photography.jpg");
